@@ -28,7 +28,18 @@ python coco.py
   3. Find the `"variables"` key within the `payload` dictionary.
   4. Replace the current value with the desired ID of the episode/clip you want to retrieve information about.
   5. Save the changes to the script.
-  6. Run the script again using the command `coco.py`.
+  6. Run the script again using the command `coco.py`
+ 
+# Response Structure
+The response from the Conan Classic API contains important information about the requested record. Here are the key components and keys included
+
+`Title`: Provides the title of the record, giving a brief description of its content.
+
+`Teaser`: Offers a short summary or description of the content associated with the record.Duration: Indicates the duration of the associated video.
+
+`Thumbnail`: Contains information about the thumbnail image associated with the record, including its URL.
+
+`Video Source`: Provides metadata about the video associated with the record, including the URL(s) for streaming.
 
 ## Script Explanation
 
