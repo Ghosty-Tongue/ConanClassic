@@ -9,12 +9,9 @@ payload = {
 }
 
 response = requests.post(url, json=payload, headers=headers)
-
-# Check if the request was successful
 if response.status_code == 200:
     # Parse JSON response
     response_data = response.json()
-    # Pretty print the response
     print(json.dumps(response_data, indent=3))
 else:
     print("Error:", response.status_code)
